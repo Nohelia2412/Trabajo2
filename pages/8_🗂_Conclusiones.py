@@ -2,7 +2,7 @@ import streamlit as st
 
 import streamlit as st
 
-st.write("""##CONCLUSIONES""")
+st.write("""## CONCLUSIONES""")
 st.write("""###  ¿Se valido o no los resultados? """)
 
 st.write("""Se realizo un formulario en google, para despues ser convertidos en un archivo CSV y utilizarlos conjuntamente con las librerias de data science Pandas, Seaborn, Matplotlib y Numpy.etc. """)
