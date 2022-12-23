@@ -1,10 +1,9 @@
 import streamlit as st
     
     
-    st.markdown ( "<h2 style='text-align: center; color: black;'>Base Teórica</h2>" , unsafe_allow_html = True )
+    st.write("""###Base Teorica""")
 
-    st.markdown ( "<h2 style='text-align: color: black;'>Análisis de Correlación</h2>" , unsafe_allow_html = True )
-
+    st.write("""###Analisis de correlacion""")
     st.markdown ( 'El análisis de conexiones es el primer paso para construir modelos explicativos y predictivos más complejos.' )
 
  
