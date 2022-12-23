@@ -1,116 +1,50 @@
 import streamlit as st
 
-st.write("""
-## TABLA DE DATOS
-""")
+si  propuesta :
+    st . nieve ()
+    st . imagen ( 'https://user-images.githubusercontent.com/19308295/115926262-2fb62980-a448-11eb-8189-c2f10e499944.png' )
+    st . markdown ( "<h2 style='text-align: center; color: black;'>Propuesta</h2>" , unsafe_allow_html = True )
 
-#Importamos librerias para Ciencia de Datos y Machine Learning
-import numpy as np
-import pandas as pd
+    st . imagen ( 'https://user-images.githubusercontent.com/19308295/115926262-2fb62980-a448-11eb-8189-c2f10e499944.png' )
 
-# nos ayuda a realizar graficas de calor
-import seaborn as sns
+    st . markdown ( "<h2 style='color: black;'>1.- Conjunto de datos</h2>" , unsafe_allow_html = True )
 
-# otra manera de grafic
-import matplotlib.pyplot as plt
+    st . markdown ( "<h2 style='color: black;'>Formulario de Google </h2>" , unsafe_allow_html = True )
 
-#archivo CSV separado por comas
-data = pd.read_csv('ENCUESTA.csv')
-st.dataframe( data )
+    st . markdown ( "<h2 style='color: black;'>Preguntas </h2>" , unsafe_allow_html = True )
 
-st.imagen ( 'https://user-images.githubusercontent.com/19308295/115926262-2fb62980-a448-11eb-8189-c2f10e499944.png' )
-st.write ( """Correlacion de Pearson y Sustitución de valores NAN""")
-pandas  =  pd . read_csv ( 'ENCUESTA.csv' )
-st.write ( 'Se visualizan los valores NAN que serán imputados en el dataframe' )
-st.dataframe( pandas )
-st.write ( 'Se muestra donde se encuentran los valores NAN (float64)' )
-pandas.dtypes
-st.imagen ( 'https://user-images.githubusercontent.com/19308295/115926262-2fb62980-a448-11eb-8189-c2f10e499944.png' )
-st.write ( """Tabla limpia de valores NAN"""  )
-st.write ( 'Los valores que reemplazan los NAN son la media' )
-data['CREO EN TI']=data['CREO EN TI'].replace(np.nan,4)
-data['COLGANDO EN TUS MANOS']=data['COLGANDO EN TUS MANOS'].replace(np.nan,4)
-data['MAMIII']=data['MAMIII'].replace(np.nan,3)
-data['HEY MOR']=data['HEY MOR'].replace(np.nan,3)
-data['DANZA KUDURO']=data['DANZA KUDURO'].replace(np.nan,4)
-data['DESPECHA']=data['DESPECHA'].replace(np.nan,3)
-data['QUE MAS PUES ']=data['QUE MAS PUES '].replace(np.nan,3)
-data['UN VERANO SIN TI']=data['UN VERANO SIN TI'].replace(np.nan,3)
-data['NINACHAY']=data['NINACHAY'].replace(np.nan,5)
-data['POR USTEDES']=data['POR USTEDES'].replace(np.nan,4)
-data['MATADOR']=data['MATADOR'].replace(np.nan,3)
-data['MONTONERO AREQUIPENO']=data['MONTONERO AREQUIPENO'].replace(np.nan,4)
-data['MALA TU']=data['MALA TU'].replace(np.nan,3)
-data['CON LA BRISA ']=data['CON LA BRISA '].replace(np.nan,3)
-data['MY LIFE ']=data['MY LIFE '].replace(np.nan,4)
-data['SIGN OF THE TIMES ']=data['SIGN OF THE TIMES '].replace(np.nan,4)
-data['BLOODY MARY']=data['BLOODY MARY'].replace(np.nan,4)
-data['PROPUESTA INDECENTE']=data['PROPUESTA INDECENTE'].replace(np.nan,4)
-st.dataframe ( data )
-st.imagen ( 'https://user-images.githubusercontent.com/19308295/115926262-2fb62980-a448-11eb-8189-c2f10e499944.png' )
-st.markdown ( "<h2 style='text-align: center; color: black;'>Tabla de Correlacion de Pandas</h2>" , unsafe_allow_html = True )
-n = data[data1.columns[1:]].to_numpy()
-m = data[data1.columns[0]].to_numpy()
-df = pd.DataFrame(n.T, columns = m)
+    st . markdown ( 'Del uno al cinco segun la escala dada califique las siguientes comidas:' )
 
-m_corr_pandas = df.corr()
-m_corr_pandas
+    st . markdown ( '1. Me desagrada' )
+    st . descuento ( '2. No me gusta' )
+    st . rebaja ( '3. Es aceptable' )
+    st . rebaja ( '4. Agradable' )
+    st . markdown ( '5. Me encantan' )
+
+    st . markdown ( 'Formulario de Google' )
+
+    st . markdown ( 'Preparacion y pregunta de pasos para realizar la encuesta.' )
+
+    st . imagen ( 'https://cdn.discordapp.com/attachments/952764370335719434/1049148181646163998/image.png' )
+    st . imagen ( 'https://cdn.discordapp.com/attachments/952764370335719434/1049538764353060944/1.png' )
+    st . imagen ( 'https://cdn.discordapp.com/attachments/952764370335719434/1049538764353060944/1.png' )
+
+    st . markdown ( "<h2 style='color: black;'>PFormulario de Google (Preprocesamiento) </h2>" , unsafe_allow_html = True )
+
+    st . markdown ( 'Procedemos a crear nuestro exel para luego ser convertido en un archivo csv con el fin de utilizarlo junto al comando panda y numpy.' )
+
+    st . imagen ( 'https://cdn.discordapp.com/attachments/952764370335719434/1049149904171319357/861555e9-e206-4d22-a2c5-d4d370966a98.png' )
+    st . image ( 'https://cdn.discordapp.com/attachments/952764370335719434/1049542478019178546/ZHiqJFM83PseYpWGGozUQAfiovfpVIiwF3y-v6CFKFIMxSP0y7VzelQL1DPFCdlw_bc-HwihIXwQ5l0ksErhLDgJBGCWuVUp4Z5pcon_3sjRYxxRBiXmAoD3mAgWC6c4VvA0xCgM3ul6QEVk_VUDwqxh6pT78X-HPjsKBjBxfQgpzuyTfCAnXFY1kf7OCLN0r43zdJVLMZaeQC2Sxp9Si9y8adGgduBPdX3vegeVk28yS8oP7U4cBFeamc_PYwGK7VmzK0sUexfN9WRr1DIT7oAGeKxzrSE4SslSVRIF-TGD-hkNb8D7CnOQN-UzERY9B2gBNbFo6fswgFRRTesnCc-yfZYTDhjldNwPshHPTSiapc18_zRfyEICfJ8TRrGd4nLPD5yHp0X6yBrZ6XkhUjWjGyHvs4x0k0QEUdSNpSiPnOMxG54Vgxl7ZgS-BvZoq3sQ9vnrJsOqAi6_eYRkAjRpI7h2Fk55zRPNPGZCeooLJWKLXOabBkVyL00q..png' )
+    st . image ( 'https://cdn.discordapp.com/attachments/952764370335719434/1049542753215844362/wQUeVtzifEvpulCDOfjZzswrSFUFQArGVR50Udx4d1iVPKhcpQXOnH3CnZTMD-98RY7SeX9BlgdrhTIjnyUEX8eXHkaNHfY9JsC-h5J_icllATWlQUcg37rk1vjsmwRfD0DlpS4IFhbVQ8Y0ooJKFx8uxZknzhd7A0lmGHKStS25ekzRv3YR8daV97wxlvDrwVDOmADCJKjWN9Yp4cmzLouLjMX96fdXy4ZqRRN8Mz9or5FXJYf6_PZjz_0zfPwc0qwuzfmQGmqYvvoJtevGEKGyJMqU0XAH0p51vciQ0md5mGcXcIYsy_IQ0zu0_--dpXVASyNZ2T769qnHUzfY204EFObq0FhNO1sZMuvs9bw4sD2Pnyip3CgdZDkGIbvEl0XQtovzxR9CiGG-wFX65jR6iA0YX4g5_viKdjF2gklfnnKSMGZ5FzRp4fLilYtR_6rYDRSxtvnoZ7bIHxX2IGKKGGIdd9Iw_v2fVX64mXzLMcXPS6v62kv5wwW2..png' )
+    st . imagen ( 'https://user-images.githubusercontent.com/19308295/115926262-2fb62980-a448-11eb-8189-c2f10e499944.png' )
+    st . markdown ( "<h2 style='text-align: center; color: black;'>Archivo CSV separado por comas</h2>" , unsafe_allow_html = True )
+    pandas  =  pd . read_csv ( 'ENCUESTA.csv' )
+    st . marco de datos ( pandas )
+    st . markdown ( 'Cantidad de Filas y Columnas' )
     
+    st . markdown ( '46 Columnas y 33 Filas' )
 
 
-st.write("""
-## TABLA DE DATOS CON IMPUTACIÓN EJECUTADA
-""")
-n = data[data1.columns[1:]].to_numpy()
-m = data[data1.columns[0]].to_numpy()
-df = pd.DataFrame(n.T, columns = m)
 
-m_corr_pandas = df.corr()
-m_corr_pandas
-
-data['CREO EN TI']=data['CREO EN TI'].replace(np.nan,4)
-data['COLGANDO EN TUS MANOS']=data['COLGANDO EN TUS MANOS'].replace(np.nan,4)
-data['MAMIII']=data['MAMIII'].replace(np.nan,3)
-data['HEY MOR']=data['HEY MOR'].replace(np.nan,3)
-data['DANZA KUDURO']=data['DANZA KUDURO'].replace(np.nan,4)
-data['DESPECHA']=data['DESPECHA'].replace(np.nan,3)
-data['QUE MAS PUES ']=data['QUE MAS PUES '].replace(np.nan,3)
-data['UN VERANO SIN TI']=data['UN VERANO SIN TI'].replace(np.nan,3)
-data['NINACHAY']=data['NINACHAY'].replace(np.nan,5)
-data['POR USTEDES']=data['POR USTEDES'].replace(np.nan,4)
-data['MATADOR']=data['MATADOR'].replace(np.nan,3)
-data['MONTONERO AREQUIPENO']=data['MONTONERO AREQUIPENO'].replace(np.nan,4)
-data['MALA TU']=data['MALA TU'].replace(np.nan,3)
-data['CON LA BRISA ']=data['CON LA BRISA '].replace(np.nan,3)
-data['MY LIFE ']=data['MY LIFE '].replace(np.nan,4)
-data['SIGN OF THE TIMES ']=data['SIGN OF THE TIMES '].replace(np.nan,4)
-data['BLOODY MARY']=data['BLOODY MARY'].replace(np.nan,4)
-data['PROPUESTA INDECENTE']=data['PROPUESTA INDECENTE'].replace(np.nan,4)
-
-st.dataframe ( data )
-st.imagen ( 'https://user-images.githubusercontent.com/19308295/115926262-2fb62980-a448-11eb-8189-c2f10e499944.png' )
-st.markdown ( "<h2 style='text-align: center; color: black;'>Tabla de Correlacion de Pandas</h2>" , unsafe_allow_html = True )
-n2 = data1[data1.columns[1:]].to_numpy()
-m2= data1[data1.columns[0]].to_numpy()
-df = pd.DataFrame(n.T, columns = m)
-
-m_corr_pandas = df.corr()
-m_corr_pandas
-    
-
-
-st.write("""
-## TABLA DE DATOS CON IMPUTACIÓN EJECUTADA
-""")
-n = data[data1.columns[1:]].to_numpy()
-m = data[data1.columns[0]].to_numpy()
-df = pd.DataFrame(n.T, columns = m)
-
-m_corr_pandas = df.corr()
-m_corr_pandas
-
-
-st.write(""" ## GRAFICA DE CALOR POR PANDAS """)
-st.write(""" !https://scontent.faqp2-1.fna.fbcdn.net/v/t39.30808-6/321675318_717252202968243_2569053303383691197_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=730e14&_nc_eui2=AeEp9yH_CLdoWx0JxCQD85nTfs03RmKri0R-zTdGYquLROkMmyuHseJ2IaxFcvb8XV9OjFiARttfxMWdFHUJOC7h&_nc_ohc=mflamIikrc8AX_Sm-XR&_nc_ht=scontent.faqp2-1.fna&oh=00_AfD2CJL0JGI7t4xnvU_c3bnrQvRWz3a6Pb65i6lu8jURkQ&oe=63AA0BAC""")
 
 
