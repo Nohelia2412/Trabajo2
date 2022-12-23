@@ -39,16 +39,13 @@ dataframe_pandas = pd.DataFrame(n.T, columns = m)
 matrix_correlacion = dataframe_pandas.corr()
 matrix_correlacion
 
-def tidy_corr_matrix(corr_pandas):
-   
-    corr_pandas = corr_pandas.stack().reset_index()
-    corr_pandas.columns = ['Datos1','Datos2','relacion']
-    corr_pandas = corr_pandas.loc[corr_pandas['Datos1'] != corr_pandas['Datos2'], :]
-    corr_pandas['may a men'] = np.abs(corr_pandas['relacion'])
-    corr_pandas = corr_pandas.sort_values('may a men', ascending=False)
-    
-    return(corr_pandas)
+st.write("""## HALLANDO VALORES MAXIMOS""")
+st.write("""formato de tabla larga (tidy)""")
+st.write("""![image.png](https://scontent.faqp2-1.fna.fbcdn.net/v/t39.30808-6/321552936_500751758819345_3826337183629146523_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=730e14&_nc_eui2=AeEi07FL6iP665uZbMbGVvo9n8ICoCd-TECfwgKgJ35MQKEpPpzqNQi-TlS0TFwbtrtTwxBFW33bBc0FiyjOtXDD&_nc_ohc=6p6_X1LTURcAX9iqC5a&_nc_ht=scontent.faqp2-1.fna&oh=00_AfAW4bTAZFRqRgrrKPWkiGCU8nfaZ_lmxCglMxuTlsfvqA&oe=63A9FE1C) """)
 
-tidy_corr_matrix(matrix_correlacion).head(20)
+st.write("""# Manera distinta de hallar matriz de correlacion""")
+st.write("""![image.png](https://scontent.faqp2-1.fna.fbcdn.net/v/t39.30808-6/321573691_498797728985079_3550727713255455082_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=730e14&_nc_eui2=AeFc-pKfNzO5r3lzwSBLK_Qwx-RMQYhGNRjH5ExBiEY1GK0GM5ZweRgRfIQsJEUCTgRrUbmVRENuXOQsnBHcpShB&_nc_ohc=Y6B8t0sBlZwAX_s2rnY&tn=VUjINHmzicimbWXE&_nc_ht=scontent.faqp2-1.fna&oh=00_AfAWp0L3FleB-LObEerAdB-lMyu2eWzKxDZOu6FpsHWmYg&oe=63AA0A79) """)
+st.write("""## HALLANDO VALORES MAXIMOS""")
+st.write("""![image.png](https://scontent.faqp2-1.fna.fbcdn.net/v/t39.30808-6/321508670_848206039798642_1928629146907610132_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=730e14&_nc_eui2=AeHtNmPSgor5lawaXq1h8y9KFi-4e4ErGwoWL7h7gSsbCt_1B6381KlYZPQaIOWFhetpwrXCoPIclw76pMemKAG9&_nc_ohc=zkC9n-AWTdIAX_X6XZw&_nc_ht=scontent.faqp2-1.fna&oh=00_AfADUwUJIaCS8J3nfgtvzKdUiQYZsUrqalg_OcXw9Pf_Hw&oe=63AADC71) """)
 
 
