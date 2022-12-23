@@ -1,15 +1,15 @@
 import streamlit as st
 
   st.imagen ( 'https://user-images.githubusercontent.com/19308295/115926262-2fb62980-a448-11eb-8189-c2f10e499944.png' )
-    st.markdown ( "<h2 style='text-align: center; color: black;'>Validación de Resultados</h2>" , unsafe_allow_html = True )
-    st.imagen ( 'https://user-images.githubusercontent.com/19308295/115926262-2fb62980-a448-11eb-8189-c2f10e499944.png' )
-    st.markdown ( "<h2 style='text-align: ; color: black;'>Validacion-Matrix de Correlacion</h2>" , unsafe_allow_html = True )
-    st.markdown ( 'Se debe llenar la tabla de VALIDACIÓN de la Matriz de Correlación con los valores de Similitud obtenidos En `NUMPY` a partir de las matrices nym con funciones. Se realiza la validación de los resultados obtenidos con la Matriz de Correlación de Pearson en Entumecido.' )
-    st.markdown ( "<h2 style='text-align: ; color: black;'>Validación de Resultados de Pandas</h2>" , unsafe_allow_html = True )
-    st.markdown ( 'Valores de Similitud en pandas' )
-    data1 =  pd.read_csv ( 'ENCUESTA.csv' )
-    dataframe1  =  pd.dataframe ( data )
-    lista1  =  dataframe1 [ 'Dirección de correo electrónico' ]. tolista ()
+  st.markdown ( "<h2 style='text-align: center; color: black;'>Validación de Resultados</h2>" , unsafe_allow_html = True )
+  st.imagen ( 'https://user-images.githubusercontent.com/19308295/115926262-2fb62980-a448-11eb-8189-c2f10e499944.png' )
+  st.markdown ( "<h2 style='text-align: ; color: black;'>Validacion-Matrix de Correlacion</h2>" , unsafe_allow_html = True )
+  st.markdown ( 'Se debe llenar la tabla de VALIDACIÓN de la Matriz de Correlación con los valores de Similitud obtenidos En `NUMPY` a partir de las matrices nym con funciones. Se realiza la validación de los resultados obtenidos con la Matriz de Correlación de Pearson en Entumecido.' )
+  st.markdown ( "<h2 style='text-align: ; color: black;'>Validación de Resultados de Pandas</h2>" , unsafe_allow_html = True )
+  st.markdown ( 'Valores de Similitud en pandas' )
+  data1 =  pd.read_csv ( 'ENCUESTA.csv' )
+  dataframe1  =  pd.dataframe ( data )
+  lista1  =  dataframe1 [ 'Dirección de correo electrónico' ]. tolista ()
 
 
 
