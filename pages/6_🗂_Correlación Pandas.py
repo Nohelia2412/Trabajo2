@@ -39,6 +39,16 @@ dataframe_pandas = pd.DataFrame(n.T, columns = m)
 matrix_correlacion = dataframe_pandas.corr()
 matrix_correlacion
 
+def tidy_corr_matrix(corr_pandas):
+   
+    corr_pandas = corr_pandas.stack().reset_index()
+    corr_pandas.columns = ['Datos1','Datos2','relacion']
+    corr_pandas = corr_pandas.loc[corr_pandas['Datos1'] != corr_pandas['Datos2'], :]
+    corr_pandas['may a men'] = np.abs(corr_pandas['relacion'])
+    corr_pandas = corr_pandas.sort_values('may a men', ascending=False)
+    
+    return(corr_pandas)
 
+tidy_corr_matrix(matrix_correlacion).head(20)
 
 
