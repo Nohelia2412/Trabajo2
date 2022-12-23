@@ -1,6 +1,6 @@
-importar  streamlit como st  
-importar  pandas  como  pd
-importar  numpy como np  
+import  streamlit as st  
+import  pandas  as  pd
+import  numpy as np  
 
 lista  = [ 'fbautistaca@unsa.edu.pe' ]
 si  st . usuario_experimental . correo electrónico  en  la lista :
