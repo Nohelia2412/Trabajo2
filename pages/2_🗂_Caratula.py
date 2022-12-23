@@ -3,9 +3,6 @@ import  pandas  as  pd
 import  numpy as np  
 
 lista  = [ 'fbautistaca@unsa.edu.pe' ]
-si  st.usuario_experimental.correo electrónico  en  la lista :
-    st.escribir ( 'Bienvenido' , st.experimental_user.email )
-    
 
 menú  =  calle.barra lateral markdown ( "<h2 style='text-align: ; color: black;'>Menú</h2>" , unsafe_allow_html = True )
 inicio  =  st.barra lateral botón ( 'Inicio' )
