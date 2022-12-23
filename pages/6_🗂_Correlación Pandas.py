@@ -1,6 +1,6 @@
 import streamlit as st
 
-    pandas = pd.read_csv('ENCUESTA.csv')
+pandas = pd.read_csv('ENCUESTA.csv')
 
 
 
