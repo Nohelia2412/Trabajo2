@@ -39,17 +39,7 @@ Es el método de correlación más utilizado, pero asume que:
  
 Los dos primeros supuestos se pueden evaluar simplemente con un diagrama de dispersión, mientras que para los últimos basta con mirar los datos y evaluar el diseño que tenemos.
 En estadísticas , el coeficiente de correlación de Pearson también referido como de Pearson r , el Pearson coeficiente de correlación momento-producto ( PPMCC ), o la correlación bivariada, es una medida de correlación lineal entre dos conjuntos de datos. Es la covarianza de dos variables, dividida por el producto de sus desviaciones estándar.; por lo tanto, es esencialmente una medida normalizada de la covarianza, de modo que el resultado siempre tiene un valor entre -1 y 1. Al igual que con la covarianza en sí, la medida solo puede reflejar una correlación lineal de variables e ignora muchos otros tipos de relación o correlación. Como ejemplo simple, uno esperaría que la edad y la altura de una muestra de adolescentes de una escuela secundaria tuvieran un coeficiente de correlación de Pearson significativamente mayor que 0, pero menor que 1 (ya que 1 representaría una correlación irrealmente perfecta).
-## Interpretación del tamaño de una correlación
-### Inferencia
-La inferencia estadística basada en el coeficiente de correlación de Pearson a menudo se centra en uno de los dos objetivos siguientes:
- 
-Un objetivo es probar la hipótesis nula de que el verdadero coeficiente de correlación ρ es igual a 0, basado en el valor del coeficiente de correlación muestral r .
-El otro objetivo es derivar un intervalo de confianza que, en un muestreo repetido, tenga una probabilidad determinada de contener ρ .
-### Usando la transformación de Fisher
-En la práctica, los intervalos de confianza y las pruebas de hipótesis relativas a ρ se suelen realizar mediante la transformación de Fisher ,F.
-### Usando un bootstrap
- 
-El bootstrap se puede utilizar para construir intervalos de confianza para el coeficiente de correlación de Pearson. En el bootstrap "no paramétrico", n pares ( x i ,  y i ) se muestrean "con reemplazo" del conjunto observado de n pares, y el coeficiente de correlación r se calcula basándose en los datos remuestreados. Este proceso se repite un gran número de veces y la distribución empírica de los valores r remuestreados se utilizan para aproximar la distribución muestral del estadístico. Un intervalo de confianza del 95% para ρ se puede definir como el intervalo que abarca desde el percentil 2.5 al 97.5 de los valores r remuestreados .
+
 ### Gráfica de dispersión
 Es un tipo de ```diagrama``` que se utiliza para __observar y analizar__ la existencia de una __correlación__ entre ```dos variables``` cuantitativas, donde una depende de la otra mediante una relación determinada para verificar o comprobar una hipótesis. Brinda una visualización de ```datos compacta```, que la hace apropiada para estudiar resultados cuantiosos de __encuestas y pruebas__.
  
@@ -135,6 +125,7 @@ La regresión lineal o ajuste lineal es un modelo matemático que se usa para ha
 Es usada en muchos ámbitos para predecir un comportamiento que tenga que ver con 2 variables, en caso no se pueda aplicar se dice que no hay correlaci{on entre las variables estudiadas.
 **Regresión Lineal**: La regresión lineal se usa para encontrar una __`relación lineal entre el objetivo y uno o más predictores`__.
 """)
+st.write("""![que-es-la-regresion-lineal-y-para-que-sirve](https://user-images.githubusercontent.com/25250496/204172072-0fabbfdf-1c4c-4f9b-8f42-505d98b18b71.png)""")
 st.write("""### ¿Qué es Pandas?
 
 Pandas es una librería de código abierto que ofrece unas estructuras muy poderosas y flexibles que facilitan la manipulación y tratamiento de datos.Las principales funciones de pandas son :cargar datos, modelar, analizar, manipular y prepararlos.
@@ -148,8 +139,6 @@ Pandas es una librería de código abierto que ofrece unas estructuras muy poder
 - head(n): Esta función devuelve las primeras n filas de nuestro DataFrame.
 - tail(n): Devuelve las n últimas filas de nuestro DataFrame.
 - describe(): Esta función da estadísticas descriptivas incluyendo aquellas que resumen la tendencia central, dispersión y la forma de la distribución de los datos.""")
-
-st.write("""![que-es-la-regresion-lineal-y-para-que-sirve](https://user-images.githubusercontent.com/25250496/204172072-0fabbfdf-1c4c-4f9b-8f42-505d98b18b71.png)""")
 
 st.write("""
 ## Escala de Likerd
