@@ -1,8 +1,8 @@
 import streamlit as st
 
-st.write("""### Base Teórica """)
+st.write("""### Marco Teórico """)
 
-st.write("""### Análisis de Correlación """)
+st.write("""### ¿Que es el análisis de Correlación? """)
 
 st.write("""El análisis de correlación es el primer paso para construir modelos explicativos y predictivos más complejos. """)
 
