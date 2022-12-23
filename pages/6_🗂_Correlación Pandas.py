@@ -33,8 +33,8 @@ st.write("""## tabla de correlacion de pandas""")
 
 n = data[data.columns[1:]].to_numpy()
 m = data[data.columns[0]].to_numpy()
-dataframe_pandas = pd.DataFrame(n.T, columns = m)
-matrix_correlacion = dataframe_pandas.corr()
+dataframe_data = pd.DataFrame(n.T, columns = m)
+matrix_correlacion = dataframe_data.corr()
 matrix_correlacion
 
 
