@@ -1,6 +1,5 @@
 import streamlit as st
 
-    st.nieve ()
     st.imagen ( 'https://user-images.githubusercontent.com/19308295/115926262-2fb62980-a448-11eb-8189-c2f10e499944.png' )
     st.markdown ( "<h2 style='text-align: center; color: black;'>Propuesta</h2>" , unsafe_allow_html = True )
 
