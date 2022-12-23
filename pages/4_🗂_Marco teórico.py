@@ -17,18 +17,9 @@ Conocer, comprender e interpretar los resultados que los indicadores ofrecen: pa
 Lo primero, un «conjunto de datos. En dicho conjunto el requisito es tener mínimo dos «variables» (éste es el nombre técnico), según unas técnicas u otras se han denominado «dominios», «campos» de una base de datos y similares.Conocer las bases matemáticas y estadísticas del análisis de datos, en concreto:""")
 
 
-st.write("""### ¿Qué es la correlación? """)
+st.write("""### MATRIZ DE CORRELACION """)
 
-st.write(""" La correlación es un tipo de asociación entre dos variables numéricas, específicamente evalúa la **tendencia (creciente o decreciente) en los datos**.
-Dos variables están asociadas cuando una variable nos da información acerca de la otra. Por el contrario, cuando no existe asociación, el aumento o disminución de una variable no nos dice nada sobre el comportamiento de la otra variable.
-Dos variables ***se correlacionan cuando muestran una tendencia creciente o decreciente***.
-### Correlación simple
-En este apartado nos vamos a centrar en el estudio de un tipo particular de relación llamada lineal y nos vamos limitar a considerar únicamente dos variables (simple).
-Una relación lineal positiva entre dos variables X e Y indica que los valores de las dos variables varían de forma parecida: los sujetos que puntúan alto en X tienden a puntuar alto en Y y los que puntúan bajo en X tienden a puntuar bajo en Y. Una relación lineal negativa significa que los valores de las dos variables varían justamente al revés: los sujetos que puntúan alto en X tienden a puntuar bajo en Y y los que puntúan bajo en X tienden a puntuar alto en Y.
-La forma más directa e intuitiva de formarnos una primera impresión sobre el tipo de relación existente entre dos variables es a través de un **diagrama de dispersión**.
-Un diagrama de dispersión es un gráfico en el que una de las variables (X) se coloca en el eje de abscisas, la otra (Y) en el de ordenadas y los pares (x , y) se representan como una nube de puntos. La forma de la nube de puntos nos informa sobre el tipo de relación existente entre las variables. 
-Un diagrama de dispersión nos permite formarnos una idea bastante aproximada sobre el tipo de relación existente entre dos variables, también puede utilizarse como una forma de cuantificar el grado de relación lineal existente entre dos variables: basta con observar el grado en el que la nube de puntos se ajusta a una línea recta.
-Sin embargo, utilizar un diagrama de dispersión como una forma de cuantificar la relación entre dos variables no es, en la práctica, tan útil como puede parecer a primera vista. Esto es debido a que la relación entre dos variables no siempre es perfecta o nula: habitualmente no es ni lo uno ni lo otro. Podríamos encontrar una línea recta ascendente que representara de forma bastante aproximada el conjunto total de los puntos del diagrama.
+st.write(""" Es una tabla que indica los coeficientes de conexión entre los factores,se utiliza para bosquejar información, como contribución a una investigación más desarrollada. Normalmente, un marco de relación es “cuadrado”, con factores similares que aparecieron en las líneas y secciones. Aplicaciones de una matriz de correlación medición de la relación La mayoría de los marcos de relación utilizan la Conexión de Minuto de Artículo de Pearson (r). Codificación de los factores En el caso de que también tengas información de un resumen, tendrás que elegir cómo codificar la información antes de procesar las conexiones. Tratamiento de las cualidades que faltan La información que utilizamos para procesar las conexiones a menudo contiene cualidades que faltan. Esto puede deberse a que no hemos recogido esta información o a que no tenemos la menor idea de las reacciones. Existen diferentes procedimientos para manejar las cualidades perdidas cuando se procesan las redes de conexión. La mejor práctica es, en su mayor parte, utilizar numerosas atribuciones.
  """)
 
 
@@ -100,9 +91,18 @@ Desde el punto de vista práctico, las principales diferencias entre estos tres 
 - Al igual que la correlación de Spearman, utiliza la ordenación de las observaciones ranking. Es recomendable cuando se dispone de pocos datos y muchos de ellos ocupan la misma posición en el rango.
 #### Covarianza
 Mide el grado de variación conjunta de dos variables aleatorias.
-## ¿Qué son los datos faltantes?
-Cuando se realiza una encuesta es probable que algunas respuestas no esten constestadas debido a diversos factores como: no entender la pregunta realizada en la encuesta, el rechazo de la persona a lo hora de informar un tema que no quiere que las demas personas sepan, el cansancio de responder muchas preguntas, etc.
-__`Una técnica muy conocida para el procedimiento de los faltantes es la imputación`__. 
+## ¿Que es NUMPY?
+Es una librería de Python especializada en el cálculo numérico y el análisis de datos, especialmente para un gran volumen de datos.Incorpora arrays lo que permite representar colecciones de datos de un mismo tipo en varias dimensiones, y funciones muy eficientes para su manipulación.Además cuenta con múltiples herramientas para manejar matrices de una forma muy eficiente.
+
+El módulo Numpy introduce en escena un nuevo tipo de objeto, ndarray (n dimensional array), caracterizado por:
+
+- Almacenamiento eficiente de colecciones de datos del mismo tipo
+- Conjunto de métodos que permiten operar de forma vectorizada sobre sus datos
+- Las formas más habituales de crear un nuevo array son:
+
+A partir de otras colecciones de datos de Python, como listas o tuplas
+Desde cero mediante funciones específicas
+Leyendo los datos de un fichero
 ### ¿Qué es la imputación?
 Es llenar los espacios vacios de la base de datos imcompleta con valores con valores admisibles y así obtener un archivo completo para poder analizarlo. Se habla de la imputación como un proceso de `fabricación de datos`. La imputación nos ayuda a:
 - Facilitar los procesos posteriores de análisis de datos.
@@ -135,27 +135,40 @@ La regresión lineal o ajuste lineal es un modelo matemático que se usa para ha
 Es usada en muchos ámbitos para predecir un comportamiento que tenga que ver con 2 variables, en caso no se pueda aplicar se dice que no hay correlaci{on entre las variables estudiadas.
 **Regresión Lineal**: La regresión lineal se usa para encontrar una __`relación lineal entre el objetivo y uno o más predictores`__.
 """)
+st.write("""### ¿Qué es Pandas?
+
+Pandas es una librería de código abierto que ofrece unas estructuras muy poderosas y flexibles que facilitan la manipulación y tratamiento de datos.Las principales funciones de pandas son :cargar datos, modelar, analizar, manipular y prepararlos.
+
+### Estructuras de datos Pandas:
+  Cuenta con dos estructuras estas son:
+
+- Series: array unidimensional etiquetado capaz de almacenar cualquier tipo de dato.
+- DataFrame: estructura bidimensional con columnas que pueden ser también de cualquier tipo. Estas columnas son a su vez Series.
+### ¿Como analizar datos con Pandas?
+- head(n): Esta función devuelve las primeras n filas de nuestro DataFrame.
+- tail(n): Devuelve las n últimas filas de nuestro DataFrame.
+- describe(): Esta función da estadísticas descriptivas incluyendo aquellas que resumen la tendencia central, dispersión y la forma de la distribución de los datos.""")
 
 st.write("""![que-es-la-regresion-lineal-y-para-que-sirve](https://user-images.githubusercontent.com/25250496/204172072-0fabbfdf-1c4c-4f9b-8f42-505d98b18b71.png)""")
 
 st.write("""
 ## Escala de Likerd
 ### ¿Qué es la escala Likert?
-La escala de Likert es una escala de evaluación, lo que significa que el cuestionario de la escala de Likert consiste en respuestas cerradas y prellenadas, provistas de opciones numéricas o verbales. La escala de Likert es también una escala multi elemento, ya que consiste en una serie de afirmaciones (elementos) que expresan los tipos de actitudes que se quieren investigar.
-En un cuestionario Likert se utiliza una escala de 5 o 7 puntos, a veces llamada escala de satisfacción, ya que se pide al encuestado que exprese su grado de acuerdo/desacuerdo con cada declaración seleccionada. En la versión original usada por Likert las opciones de respuesta eran:
-1 Totalmente de acuerdo
-2 De acuerdo
-3 Ni de acuerdo ni en desacuerdo
-4 En desacuerdo
-5 Totalmente en desacuerdo
-### Ventajas de la escala de Likert
-La **principal ventaja** de la escala de evaluación de Likert es que las respuestas pueden discernirse claramente y colocarse en la escala de valores para analizarlas rápidamente (las respuestas del encuestado ya corresponden a valores numéricos que pueden cuantificarse automáticamente).
-Otras ventajas son:
-- El uso de la escala de Likert está muy extendido
-- Codificación inmediata de las respuestas
-- Suma automática de resultados
-- Simplicidad de aplicación
-- Compatible con las técnicas de cuantificación de datos
+Se utiliza para medir qué tan de acuerdo están los encuestados con una variedad de afirmaciones.Esta es ideal para medir reacciones, actitudes y comportamientos de una persona. A diferencia de una simple pregunta de “sí” / “no”, la escala de Likert permite a los encuestados calificar sus respuestas.
+
+La escala de Likert es uno de los tipos de escalas de medición utilizados principalmente en la investigación de mercados para la comprensión de las opiniones y actitudes de un consumidor hacia una marca, producto o mercado meta. Nos sirve principalmente para realizar mediciones y conocer sobre el grado de conformidad de una persona o encuestado hacia determinada oración afirmativa o negativa.
+
+Las respuestas pueden ser ofrecidas en diferentes niveles de medición, permitiendo escalas de 5, 7 y 9 elementos configurados previamente. Siempre se debe tener un elemento neutral para aquellos usuarios que ni de acuerdo ni en desacuerdo.
 """)
+st.write("""### CSV (Valores Separados por Comas):
+
+Es el formato más común de importación y exportación de hojas de cálculo y bases de datos. Es cualquier archivo de texto en el cual los caracteres están separados por comas, haciendo una especie de tabla en filas y columnas. Las columnas quedan definidas por cada punto y coma (;), mientras que cada fila se define mediante una línea adicional en el texto. De esta manera, se pueden crear archivos CSV con gran facilidad.
+
+### ¿Para qué sirve un archivo CSV?
+
+Los archivos CSV sirven para manejar una gran cantidad de datos en formato tabla, sin que ello conlleve sobrecoste computacional alguno. Es tremendamente sencillo generar una tabla a partir de un documento de texto, con tan solo delimitar cada celda requerida con un punto y coma o con una coma).
+
+### Gráfica de calor
+Un gráfico de calor se usa para visualizar la relación numérica existente entre dos variables de categorías.Esta consiste en una cuadrícula rectangular compuesta de dos variables de categorías,cada celda de la cuadrícula se simboliza con un valor numérico. tiene limitaciones? Las variables de un gráfico de calor no pueden tener más de 3.000 valores únicos por eje. Si una de las variables o ambas exceden el límite de 3.000 valores, puede usarse un filtro, por ejemplo, un filtro predefinido, para reducir el tamaño del dataset.""")
 
 st.write("""![linea 2](https://user-images.githubusercontent.com/19308295/115926262-2fb62980-a448-11eb-8189-c2f10e499944.png)""")
