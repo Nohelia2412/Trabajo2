@@ -2,12 +2,12 @@ import streamlit as st
 import pandas as pd
 
 st.write(""" MATRIZ DE CORRELACION""")
-pandas = pd.read_csv('ENCUESTA.csv')
-st.dataframe(pandas)
+data = pd.read_csv('ENCUESTA.csv')
+st.dataframe(data)
 st.write("""Cantidad de Filas y Columnas""")
     
 st.write("""58 Columnas y 37 Filas""")
-pandas.dtypes
+data.dtypes
 st.write("""IMPUTACION DE DATOS NAn""")
 data['CREO EN TI']=data['CREO EN TI'].replace(np.nan,4)
 data['COLGANDO EN TUS MANOS']=data['COLGANDO EN TUS MANOS'].replace(np.nan,4)
@@ -27,12 +27,12 @@ data['MY LIFE ']=data['MY LIFE '].replace(np.nan,4)
 data['SIGN OF THE TIMES ']=data['SIGN OF THE TIMES '].replace(np.nan,4)
 data['BLOODY MARY']=data['BLOODY MARY'].replace(np.nan,4)
 data['PROPUESTA INDECENTE']=data['PROPUESTA INDECENTE'].replace(np.nan,4)
-st.dataframe(pandas)
+st.dataframe(data)
 
 st.write("""## tabla de correlacion de pandas""")
 
-n = pandas[pandas.columns[1:]].to_numpy()
-m = pandas[pandas.columns[0]].to_numpy()
+n = data[data.columns[1:]].to_numpy()
+m = data[data.columns[0]].to_numpy()
 dataframe_pandas = pd.DataFrame(n.T, columns = m)
 matrix_correlacion = dataframe_pandas.corr()
 matrix_correlacion
