@@ -17,7 +17,7 @@ st.write("""La correlacion de pearson fue eficiente para calcular la correlacion
 st.write("""###   Correlación de Pearson y Regresión Lineal, ¿cuál es su relación? """)
 st.write("""La correlación de Pearson, es el que mide la regresión lineal de los datos obtenidos, por lo tanto la regresión lineal es parte de la correlación de pearson. Siendo la correlación de pearson el método y la regresión lineal el resultado. )""")
 Footer
-© 2022 GitHub, Inc.
+2022 GitHub, Inc.
 Footer navigation
 Terms
 Privacy
